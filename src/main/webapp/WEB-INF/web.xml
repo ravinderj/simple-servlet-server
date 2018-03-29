@@ -15,4 +15,12 @@
         <servlet-name>helloWorld</servlet-name>
         <url-pattern>/helloWorld</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>byeWorld</servlet-name>
+        <servlet-class>com.thoughtworks.server.ByeWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>byeWorld</servlet-name>
+        <url-pattern>/byeWorld</url-pattern>
+    </servlet-mapping>
 </web-app>

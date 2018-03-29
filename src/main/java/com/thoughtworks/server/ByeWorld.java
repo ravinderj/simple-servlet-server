@@ -6,12 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class HelloWorld extends HttpServlet {
-  String sharedString = "World";
+public class ByeWorld extends HttpServlet {
   @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     ServletContext context=this.getServletContext();
-    context.setAttribute("sharedString",sharedString);
-    res.getWriter().write("Hello " + sharedString);
+    String sharedString = (String) context.getAttribute("sharedString");
+    resp.getWriter().write("Bye " + sharedString);
   }
 }
