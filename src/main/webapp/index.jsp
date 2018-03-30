@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Flower Catalog</title>
   </head>
   <body>
-  $END$
+  <h2 style="text-align: center">
+    Flower Catalog
+  </h2>
+  <hr>
+    <img src="images/freshorigins.jpg" alt="Flower Image">
   </body>
 </html>
