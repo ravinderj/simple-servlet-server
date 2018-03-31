@@ -23,4 +23,12 @@
         <servlet-name>byeWorld</servlet-name>
         <url-pattern>/byeWorld</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>comments</servlet-name>
+        <servlet-class>com.thoughtworks.server.Comments</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>comments</servlet-name>
+        <url-pattern>/comments</url-pattern>
+    </servlet-mapping>
 </web-app>
